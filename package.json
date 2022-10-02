@@ -1,0 +1,24 @@
+{
+  "name": "taobao-h5-sign",
+  "version": "0.0.1",
+  "description": "Javascript signature generator for taobao H5 apis.",
+  "main": "./api/sign.js",
+  "scripts": {
+    "start": "vercel dev",
+    "test": "echo hi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiongnemo/taobao-h5-sign.git"
+  },
+  "author": {
+    "name": "Anzupop",
+    "url": "https://www.anzupop.com",
+    "email": "nemo@anzupop.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xiongnemo/taobao-h5-sign/issues"
+  },
+  "homepage": "https://github.com/xiongnemo/taobao-h5-sign"
+}
