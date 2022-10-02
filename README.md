@@ -1,5 +1,5 @@
-# netease-music-abroad-decode
-Javascript decoder for HTTP responses when netease music thinks you are from abroad.
+# taobao-h5-sign
+Javascript signature generator for taobao H5 apis.
 
 ## Build
 
@@ -11,16 +11,14 @@ vercel dev
 
 ## Usage
 
-Send request with raw message netease music returns as HTTP request body.
-
-Deployed [here](https://netease-music-abroad-decode.vercel.app/api/decode)
+Send request with string_to_sign from Taobao.
 
 * Set `Content-Type` to `text/plain`.
 
 ```python
-request_header = {
-    "Content-Type": "text/plain"
-}
+string_to_sign = f'{token}&{timestamp}&{APP_KEY}&{query_data_json_str}'
+sign = requests.post('http://127.0.0.1:3000/api/sign', headers={"Content-Type": "text/plain"}, data=string_to_sign.encode('utf-8'))
+print(sign.text)
 ```
 
-![Example](./readme_img/usage_postman.png)
+Deployed [here](https://taobao-h5-sign.vercel.app/api/sign)
